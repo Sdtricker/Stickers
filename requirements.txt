@@ -1,4 +1,4 @@
 pyromod
 TgCrypto
 pyrogram
-flusk
+Flusk
