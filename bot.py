@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.errors import ListenerTimeout
+from pyromod.exceptions.listener_timeout import ListenerTimeout
 from pyrogram.raw import functions, types
 import asyncio
 import os
