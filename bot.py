@@ -3,7 +3,18 @@ from pyromod.exceptions.listener_timeout import ListenerTimeout
 from pyrogram import filters
 from pyrogram.raw import functions, types
 import os
+from flask import Flask
 
+# Flask app to keep bot alive
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot is running!"
+
+def run_flask():
+    app.run(host="0.0.0.0", port=8080)
+    
 # Bot credentials
 api_id = 29657994
 api_hash = "85f461c4f637911d79c65da1fc2bdd77"
